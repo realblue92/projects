@@ -52,6 +52,16 @@ public:
 		strcpy(number, mynumber);
 		position = myposition;
 	}
+	NameCard(NameCard &copy)
+		:position(copy.position)
+	{
+		name = new char[strlen(copy.name) + 1];
+		company = new char[strlen(copy.company) + 1];
+		number = new char[strlen(copy.number) + 1];
+		strcpy(name, copy.name);
+		strcpy(company, copy.company);
+		strcpy(number, copy.number);
+	}
 	void ShowNameCardInfo() const
 	{
 
@@ -67,15 +77,17 @@ public:
 		delete[]company;
 		delete[]number;
 	}
+	
 };
 int main()
 {
 	NameCard manClerk("Lee", "ABCEng", "010-1111-2222", COMP_POS::CLERK);
+	NameCard copy1 = manClerk;
 	NameCard manSENIOR("HONG", "OrangeEng", "010-3333-4444", COMP_POS::SENIOR);
-	NameCard manAssist("Kim", "SoGoodComp", "010-5555-6666", COMP_POS::ASSIST);
+	NameCard copy2 = manSENIOR;
 	manClerk.ShowNameCardInfo();
 	manSENIOR.ShowNameCardInfo();
-	manAssist.ShowNameCardInfo();
-
+	copy1.ShowNameCardInfo();
+	copy2.ShowNameCardInfo();
 	return 0;
 }
