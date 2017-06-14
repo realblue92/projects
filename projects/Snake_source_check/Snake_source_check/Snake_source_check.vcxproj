@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{879D68DD-A37B-46C9-9EE7-789D4648605A}</ProjectGuid>
+    <ProjectGuid>{3FDADC4F-8A43-4C14-A119-633D1E78BDD0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ATM</RootNamespace>
+    <RootNamespace>Snake_source_check</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,7 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BankATM.cpp" />
+    <ClCompile Include="snake_source_check.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

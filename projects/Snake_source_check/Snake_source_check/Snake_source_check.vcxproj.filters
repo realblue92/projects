@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BankATM.cpp">
+    <ClCompile Include="snake_source_check.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
