@@ -15,16 +15,16 @@ namespace COMP_POS
 		switch (pos)
 		{
 		case CLERK:
-			cout << "»ç¿ø" << endl;
+			cout << "ì‚¬ì›" << endl;
 			break;
 		case SENIOR:
-			cout << "ÁÖÀÓ" << endl;
+			cout << "ì£¼ìž„" << endl;
 			break;
 		case ASSIST:
-			cout << "´ë¸®" << endl;
+			cout << "ëŒ€ë¦¬" << endl;
 			break;
 		case MANAGER:
-			cout << "°úÀå" << endl;
+			cout << "ê³¼ìž¥" << endl;
 			break;
 		}
 	}
@@ -42,13 +42,13 @@ public:
 	NameCard(char *myname, char *mycompany, char *mynumber, int myposition)
 	{
 		int namelen = strlen(myname) + 1;
-		name = new char[namelen];         // ÀÌ¸§ Á¤º¸ µ¿ÀûÇÒ´ç
+		name = new char[namelen];         // ì´ë¦„ ì •ë³´ ë™ì í• ë‹¹
 		strcpy(name, myname);
 		int complen = strlen(mycompany) + 1;
-		company = new char[complen];      // È¸»ç Á¤º¸ µ¿ÀûÇÒ´ç
+		company = new char[complen];      // íšŒì‚¬ ì •ë³´ ë™ì í• ë‹¹
 		strcpy(company, mycompany);
 		int numlen = strlen(mynumber) + 1;
-		number = new char[numlen];         // ÀüÈ­¹øÈ£ Á¤º¸ µ¿ÀûÇÒ´ç
+		number = new char[numlen];         // ì „í™”ë²ˆí˜¸ ì •ë³´ ë™ì í• ë‹¹
 		strcpy(number, mynumber);
 		position = myposition;
 	}
@@ -65,10 +65,10 @@ public:
 	void ShowNameCardInfo() const
 	{
 
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "È¸»ç: " << company << endl;
-		cout << "ÀüÈ­¹øÈ£: " << number << endl;
-		cout << "Á÷±Þ: "; COMP_POS::ShowPosInfo(position);
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "íšŒì‚¬: " << company << endl;
+		cout << "ì „í™”ë²ˆí˜¸: " << number << endl;
+		cout << "ì§ê¸‰: "; COMP_POS::ShowPosInfo(position);
 		cout << endl;
 	}
 	~NameCard()
