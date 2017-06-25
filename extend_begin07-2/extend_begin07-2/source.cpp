@@ -15,8 +15,8 @@ public:
 
 	void ShowMyFriendInfo()
 	{
-		cout << "ÀÌ¸§: " << name << endl;
-		cout << "³ªÀÌ: " << age << endl;
+		cout << "ì´ë¦„: " << name << endl;
+		cout << "ë‚˜ì´: " << age << endl;
 	}
 private:
 	char * name;
@@ -38,8 +38,8 @@ public:
 	void ShowMyFriendDetailInfo()
 	{
 		ShowMyFriendInfo();
-		cout << "ÁÖ¼Ò: " << addr << endl;
-		cout << "ÀüÈ­: " << phone << endl;
+		cout << "ì£¼ì†Œ: " << addr << endl;
+		cout << "ì „í™”: " << phone << endl;
 	}
 private:
 	char * addr;
