@@ -6,31 +6,31 @@ class Rectangle
 private:
 	int x, y;
 public:
-	Rectangle(int Hori, int Vert) : x(Hori), y(Vert)	// Rectangle Å¬·¡½º »ı¼ºÀÚ(ÃÊ±âÈ­)
+	Rectangle(int Hori, int Vert) : x(Hori), y(Vert)	// Rectangle í´ë˜ìŠ¤ ìƒì„±ì(ì´ˆê¸°í™”)
 	{
-
+		
 	}
-	void ShowAreaInfo()	// ¸éÀû(x,yÀÇ °ö) Ãâ·Â
+	void ShowAreaInfo()	// ë©´ì (x,yì˜ ê³±) ì¶œë ¥
 	{
-		cout << "¸éÀû:" << x*y << endl;
+		cout << "ë©´ì :" << x*y << endl;
 	}
 };
 
-class Square : public Rectangle // »ó¼Ó ¼±¾ğ : Square (ÀÚ½Ä) , Rectangle (ºÎ¸ğ)
+class Square : public Rectangle // ìƒì† ì„ ì–¸ : Square (ìì‹) , Rectangle (ë¶€ëª¨)
 {
 
 public:
-	Square(int segment) : Rectangle(segment, segment)	// Square Å¬·¡½º »ı¼ºÀÚ(ÃÊ±âÈ­), ÀÌ ¶§ Rectangle Å¬·¡½º »ı¼ºÀÚ(ÃÊ±âÈ­) ÀÌ¿ë
+	Square(int segment) : Rectangle(segment, segment)	// Square í´ë˜ìŠ¤ ìƒì„±ì(ì´ˆê¸°í™”), ì´ ë•Œ Rectangle í´ë˜ìŠ¤ ìƒì„±ì(ì´ˆê¸°í™”) ì´ìš©
 	{
 	}
 };
 
 int main()
 {
-	Rectangle rec(4, 3);	// Rectangle Å¬·¡½º¸¦ °®´Â rec °´Ã¼ »ı¼º ¹× ÀÎÀÚ °ª ÀÔ·Â
-	rec.ShowAreaInfo();		// rec ¸éÀû Ãâ·Â
+	Rectangle rec(4, 3);	// Rectangle í´ë˜ìŠ¤ë¥¼ ê°–ëŠ” rec ê°ì²´ ìƒì„± ë° ì¸ì ê°’ ì…ë ¥
+	rec.ShowAreaInfo();		// rec ë©´ì  ì¶œë ¥
 
-	Square sqr(7);			// Square Å¬·¡½º¸¦ °®´Â sqr °´Ã¼ »ı¼º ¹× ÀÎÀÚ °ª ÀÔ·Â
-	sqr.ShowAreaInfo();		// sqr ¸éÀû Ãâ·Â
+	Square sqr(7);			// Square í´ë˜ìŠ¤ë¥¼ ê°–ëŠ” sqr ê°ì²´ ìƒì„± ë° ì¸ì ê°’ ì…ë ¥
+	sqr.ShowAreaInfo();		// sqr ë©´ì  ì¶œë ¥
 	return 0;
 }
